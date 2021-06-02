@@ -67,11 +67,7 @@ function toggleBoxes () {
   }
 
   var shouldCheck;
-  if (num_unchecked < num_checked) {
-    shouldCheck = false;
-  } else {
-    shouldCheck = true;
-  }
+  shouldCheck = num_unchecked < num_checked;
 
   // (un)check all checkboxes
   for (i = 0; i < checkboxes.length; i++) {
